@@ -1,0 +1,12 @@
+<html>
+  <script>
+    function redirect() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var url = urlParams.get('url');
+      if (url) {
+        window.location.href = url;
+      }
+    }
+    redirect();
+  </script>
+</html>
